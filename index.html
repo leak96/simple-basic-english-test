@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Kisi-Kisi Bahasa Inggris</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Plus Jakarta Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%);
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .option-transition {
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen text-slate-100 flex flex-col antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="border-b border-slate-800 bg-slate-900/60 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="p-2 bg-indigo-600 rounded-lg text-white shadow-lg shadow-indigo-500/30">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="font-extrabold text-sm md:text-base text-white tracking-wide">KISI-KISI BAHASA INGGRIS</h1>
+                    <p class="text-xs text-indigo-400 font-medium">Ujian Penyesuaian Ijazah</p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <!-- Sound Toggle button -->
+                <button id="soundToggleBtn" onclick="toggleSound()" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors" title="Toggle Sound Effects">
+                    <svg id="soundOnIcon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.414 0A5.982 5.982 0 0115 10a5.982 5.982 0 01-1.757 4.243 1 1 0 01-1.414-1.414A3.982 3.982 0 0013 10a3.982 3.982 0 00-1.172-2.828a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                    <svg id="soundOffIcon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM12.293 7.293a1 1 0 011.414 0L15 8.586l1.293-1.293a1 1 0 111.414 1.414L16.414 10l1.293 1.293a1 1 0 01-1.414 1.414L15 11.414l-1.293 1.293a1 1 0 01-1.414-1.414L13.586 10l-1.293-1.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <div class="hidden sm:flex flex-col text-right">
+                    <span class="text-xs text-slate-400">Status</span>
+                    <span class="text-xs font-semibold text-emerald-400 flex items-center gap-1">
+                        <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span> Siap Ujian
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="flex-grow max-w-6xl w-full mx-auto px-4 py-8 flex flex-col justify-center">
+        
+        <!-- ================= START SCREEN ================= -->
+        <section id="startScreen" class="glass-card rounded-2xl p-6 md:p-10 shadow-2xl relative overflow-hidden max-w-2xl mx-auto w-full">
+            <div class="absolute -right-20 -top-20 w-60 h-60 rounded-full bg-indigo-600/10 blur-3xl pointer-events-none"></div>
+            <div class="absolute -left-20 -bottom-20 w-60 h-60 rounded-full bg-fuchsia-600/10 blur-3xl pointer-events-none"></div>
+
+            <div class="text-center mb-8 relative z-10">
+                <span class="px-3 py-1 bg-indigo-500/10 border border-indigo-500/20 rounded-full text-indigo-400 text-xs font-semibold uppercase tracking-wider">Persiapan Ujian KP</span>
+                <h2 class="text-3xl font-extrabold mt-4 text-white">English Assessment Platform</h2>
+                <p class="text-slate-400 mt-2 text-sm md:text-base leading-relaxed">Selamat datang di portal latihan mandiri ujian penyesuaian ijazah. Aplikasi ini dirancang berdasarkan kisi-kisi resmi untuk melatih pemahaman tata bahasa (Grammar) dan percakapan bahasa Inggris Anda.</p>
+            </div>
+
+            <!-- Quiz Information Badges -->
+            <div class="grid grid-cols-3 gap-3 mb-8 relative z-10">
+                <div class="bg-slate-900/50 p-3 rounded-xl border border-slate-800 text-center">
+                    <span class="block text-xl md:text-2xl font-black text-indigo-400">43</span>
+                    <span class="text-[10px] md:text-xs text-slate-400 font-medium">Total Soal</span>
+                </div>
+                <div class="bg-slate-900/50 p-3 rounded-xl border border-slate-800 text-center">
+                    <span class="block text-xl md:text-2xl font-black text-amber-400">Multi-type</span>
+                    <span class="text-[10px] md:text-xs text-slate-400 font-medium">Past/Pres/Fut</span>
+                </div>
+                <div class="bg-slate-900/50 p-3 rounded-xl border border-slate-800 text-center">
+                    <span class="block text-xl md:text-2xl font-black text-emerald-400">100%</span>
+                    <span class="text-[10px] md:text-xs text-slate-400 font-medium">Berdasarkan Kisi</span>
+                </div>
+            </div>
+
+            <!-- Mode Selector Box -->
+            <div class="mb-8 relative z-10">
+                <label class="block text-sm font-semibold text-slate-300 mb-3 text-center">PILIH MODE LATIHAN</label>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Mode Belajar option -->
+                    <div id="modeStudyBtn" onclick="selectMode('study')" class="cursor-pointer border-2 border-indigo-500/30 hover:border-indigo-500 bg-indigo-950/20 hover:bg-indigo-950/40 p-4 rounded-xl transition-all flex flex-col items-center text-center relative overflow-hidden group">
+                        <div class="absolute top-2 right-2 h-4 w-4 rounded-full border border-indigo-500 flex items-center justify-center bg-indigo-600" id="studyCheck">
+                            <div class="h-1.5 w-1.5 rounded-full bg-white"></div>
+                        </div>
+                        <div class="p-2 bg-indigo-500/10 rounded-lg text-indigo-400 mb-2 group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                            </svg>
+                        </div>
+                        <span class="font-bold text-sm text-white">Mode Belajar (Study)</span>
+                        <span class="text-xs text-slate-400 mt-1">Feedback instan benar/salah langsung di setiap soal. Cocok untuk mengulang materi.</span>
+                    </div>
+
+                    <!-- Mode Ujian option -->
+                    <div id="modeExamBtn" onclick="selectMode('exam')" class="cursor-pointer border-2 border-slate-800 hover:border-slate-700 bg-slate-900/40 hover:bg-slate-900/60 p-4 rounded-xl transition-all flex flex-col items-center text-center relative overflow-hidden group">
+                        <div class="absolute top-2 right-2 h-4 w-4 rounded-full border border-slate-600 flex items-center justify-center bg-transparent" id="examCheck">
+                            <div class="h-1.5 w-1.5 rounded-full bg-transparent"></div>
+                        </div>
+                        <div class="p-2 bg-slate-800 rounded-lg text-slate-400 mb-2 group-hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <span class="font-bold text-sm text-slate-300">Mode Ujian (Exam)</span>
+                        <span class="text-xs text-slate-400 mt-1">Ujian langsung terus-menerus tanpa gangguan. Nilai & review ditampilkan di akhir.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Start Action Button -->
+            <button onclick="startQuiz()" class="w-full py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-xl shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/40 transition-all flex items-center justify-center gap-2 text-base group">
+                Mulai Ujian Sekarang
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+            </button>
+        </section>
+
+        <!-- ================= QUIZ PLAY SCREEN ================= -->
+        <section id="quizScreen" class="hidden w-full flex flex-col lg:flex-row gap-6 items-start">
+            
+            <!-- Left Panel: Context Passage (Only visible for certain questions) -->
+            <div id="passageContainer" class="hidden lg:w-5/12 w-full glass-card rounded-2xl p-5 md:p-6 shadow-xl border border-slate-800">
+                <div class="flex items-center gap-2 pb-3 mb-4 border-b border-slate-800">
+                    <span class="p-1.5 bg-amber-500/10 rounded-lg text-amber-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </span>
+                    <h3 class="font-bold text-sm tracking-wide text-amber-400 uppercase">Context Reading / Teks Bacaan</h3>
+                </div>
+                <div id="passageText" class="text-slate-300 text-sm leading-relaxed whitespace-pre-line bg-slate-900/30 p-4 rounded-xl border border-slate-800/50 max-h-96 overflow-y-auto">
+                    <!-- Dynamic Passage Text injected here -->
+                </div>
+            </div>
+
+            <!-- Right Panel: Question & Answers -->
+            <div id="questionWrapper" class="flex-grow w-full glass-card rounded-2xl p-5 md:p-8 shadow-xl border border-slate-800">
+                
+                <!-- Progress Header -->
+                <div class="flex items-center justify-between mb-6 pb-4 border-b border-slate-800/60">
+                    <div class="flex flex-col">
+                        <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Progress Soal</span>
+                        <div class="flex items-baseline gap-1 mt-1">
+                            <span id="currentQuestionNum" class="text-2xl font-black text-indigo-400">1</span>
+                            <span class="text-slate-500 text-xs">/</span>
+                            <span id="totalQuestionsNum" class="text-sm font-semibold text-slate-400">43</span>
+                        </div>
+                    </div>
+
+                    <!-- Mode Indicator Pill -->
+                    <span id="gameModeBadge" class="px-3 py-1 bg-indigo-500/10 border border-indigo-500/20 rounded-full text-indigo-400 text-xs font-semibold">
+                        Mode Belajar
+                    </span>
+
+                    <div class="flex flex-col items-end">
+                        <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Waktu</span>
+                        <span id="timerText" class="text-sm font-black text-amber-400 mt-1 tabular-nums">00:00</span>
+                    </div>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="w-full h-1.5 bg-slate-800 rounded-full overflow-hidden mb-6">
+                    <div id="progressBar" class="h-full bg-gradient-to-r from-indigo-500 to-fuchsia-500 transition-all duration-300" style="width: 2%;"></div>
+                </div>
+
+                <!-- Mobile Reading Passage (Only visible on small screen if applicable) -->
+                <div id="mobilePassageBox" class="hidden lg:hidden mb-6 bg-slate-900/50 p-4 rounded-xl border border-slate-800 text-sm text-slate-300">
+                    <div class="font-bold text-amber-400 mb-2 flex items-center gap-1.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                        Teks Bacaan (Context):
+                    </div>
+                    <p id="mobilePassageText" class="whitespace-pre-line text-xs max-h-40 overflow-y-auto"></p>
+                </div>
+
+                <!-- Question Text -->
+                <div class="mb-6">
+                    <div id="questionText" class="text-lg md:text-xl font-bold text-white leading-relaxed">
+                        <!-- Dynamic Question Text injected here -->
+                    </div>
+                </div>
+
+                <!-- Answer Options -->
+                <div class="space-y-3 mb-6" id="optionsContainer">
+                    <!-- Dynamic Options Injected here -->
+                </div>
+
+                <!-- Action Bar (Review Feedback / Next / Finish) -->
+                <div id="feedbackContainer" class="hidden mt-6 bg-slate-900/40 border border-slate-800 rounded-xl p-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div class="flex items-center gap-3">
+                        <div id="feedbackIcon" class="p-2 rounded-full">
+                            <!-- Correct / Incorrect SVG -->
+                        </div>
+                        <div>
+                            <span id="feedbackTitle" class="font-extrabold text-sm block"></span>
+                            <span id="feedbackDesc" class="text-xs text-slate-400"></span>
+                        </div>
+                    </div>
+                    
+                    <button id="nextBtn" onclick="nextQuestion()" class="w-full sm:w-auto px-6 py-2.5 bg-indigo-600 hover:bg-indigo-500 font-bold rounded-lg transition-colors flex items-center justify-center gap-2 text-sm group">
+                        <span id="nextBtnText">Lanjut</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Exam Mode Navigations (Hidden in Study mode) -->
+                <div id="examNavContainer" class="hidden flex items-center justify-end mt-4 pt-4 border-t border-slate-800">
+                    <button onclick="nextQuestion()" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 font-bold rounded-xl shadow-lg transition-all text-sm flex items-center gap-1.5 group">
+                        <span>Berikutnya</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= RESULTS & REPORT SCREEN ================= -->
+        <section id="resultScreen" class="hidden glass-card rounded-2xl p-6 md:p-10 shadow-2xl relative overflow-hidden max-w-4xl mx-auto w-full">
+            
+            <div class="text-center mb-8">
+                <span class="px-3 py-1 bg-emerald-500/10 border border-emerald-500/20 rounded-full text-emerald-400 text-xs font-semibold uppercase tracking-wider">Hasil Evaluasi</span>
+                <h2 class="text-3xl font-extrabold mt-4 text-white">Ringkasan Nilai Anda</h2>
+                <p class="text-slate-400 text-sm mt-1">Berikut adalah rekapitulasi pengerjaan soal latihan Anda.</p>
+            </div>
+
+            <!-- Score Cards Header -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-800 flex flex-col items-center justify-center text-center">
+                    <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">Skor Akhir</span>
+                    <span id="finalScore" class="text-3xl font-black text-indigo-400">0 / 43</span>
+                </div>
+                <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-800 flex flex-col items-center justify-center text-center">
+                    <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">Akurasi</span>
+                    <span id="accuracyPercent" class="text-3xl font-black text-emerald-400">0%</span>
+                </div>
+                <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-800 flex flex-col items-center justify-center text-center">
+                    <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">Durasi</span>
+                    <span id="totalDuration" class="text-3xl font-black text-amber-400">00:00</span>
+                </div>
+                <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-800 flex flex-col items-center justify-center text-center">
+                    <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">Predikat</span>
+                    <span id="gradeText" class="text-lg font-black text-fuchsia-400">Kurang</span>
+                </div>
+            </div>
+
+            <!-- Action buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-10 pb-8 border-b border-slate-800">
+                <button onclick="restartQuiz()" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 font-bold rounded-xl transition-all shadow-lg shadow-indigo-500/10 hover:shadow-indigo-500/30 text-sm flex items-center justify-center gap-2 group">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform group-hover:rotate-180 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.21 8H17" />
+                    </svg>
+                    Ulangi Latihan
+                </button>
+                <button onclick="scrollToReview()" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold rounded-xl transition-all text-sm flex items-center justify-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                    </svg>
+                    Review Jawaban
+                </button>
+            </div>
+
+            <!-- Interative Review Panel -->
+            <div id="reviewPanel" class="scroll-mt-24">
+                <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-6">
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Evaluasi & Review Butir Soal</h3>
+                        <p class="text-xs text-slate-400 mt-1">Gunakan penyaringan berikut untuk mempermudah mempelajari kesalahan.</p>
+                    </div>
+                    <!-- Review Filter Controls -->
+                    <div class="flex bg-slate-900 rounded-lg p-1 border border-slate-800 text-xs">
+                        <button onclick="filterReview('all')" id="filterAll" class="px-3 py-1.5 bg-indigo-600 rounded-md font-bold text-white transition-colors">Semua</button>
+                        <button onclick="filterReview('correct')" id="filterCorrect" class="px-3 py-1.5 hover:text-white rounded-md text-slate-400 transition-colors">Benar</button>
+                        <button onclick="filterReview('incorrect')" id="filterIncorrect" class="px-3 py-1.5 hover:text-white rounded-md text-slate-400 transition-colors">Salah</button>
+                    </div>
+                </div>
+
+                <!-- Review list container -->
+                <div class="space-y-4 max-h-[500px] overflow-y-auto pr-2 custom-scrollbar" id="reviewContainer">
+                    <!-- Dinamic review items injected here -->
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 bg-slate-950/60 py-6 mt-12 text-center text-xs text-slate-500">
+        <div class="max-w-6xl mx-auto px-4">
+            <p>&copy; 2026 Aplikasi Ujian Penyesuaian Ijazah. Menggunakan Kisi-Kisi Resmi Bahasa Inggris.</p>
+        </div>
+    </footer>
+
+    <!-- JS Logic -->
+    <script>
+        // --- QUIZ DATA ---
+        // Passages database
+        const passages = {
+            andi: `Last year, Andi worked as a trainee at a transportation training center. Every day, he uses the bus to go to the training center because it is cheap and comfortable. The bus stops near his dormitory, so he walks only a short distance.
+            
+            In the past, Andi did not like public transportation, but now he enjoys using it. Next month, he will take the train to Jakarta for a transportation seminar. He will learn more about modern transportation systems in Indonesia.`,
+            
+            sinta: `Last year, Sinta worked as a trainee at an airport. Every day, she checks passenger documents and helps travelers at the terminal. She likes her job because it is interesting and challenging.
+            
+            In the past, Sinta did not understand airport operations, but now she knows more about air transportation. Next year, she will work as an airport officer. She will serve passengers and will support safe air transportation services.`,
+            
+            rudi: `Every day, Rudi uses public transportation to go to work. Last year, he worked at a bus terminal as an assistant. He helped passengers and checked tickets in the morning.
+            
+            Now, Rudi enjoys his job and learns new things about transportation services. Next month, he will join a training program. He will improve his skills and will support better transportation services.`
+        };
+
+        // All 43 questions according to user provided data
+        const questionsDB = [
+            {
+                num: 1,
+                question: "Which greeting is suitable for a formal meeting?",
+                options: [
+                    { key: "A", text: "Hey!" },
+                    { key: "B", text: "Good afternoon." },
+                    { key: "C", text: "What’s up?" }
+                ],
+                correct: "B",
+                passage: null
+            },
+            {
+                num: 2,
+                question: "You want to greet a group of people in a formal event. What should you say?",
+                options: [
+                    { key: "A", text: "Hi guys!" },
+                    { key: "B", text: "Ladies and Gentlemen, good morning." },
+                    { key: "C", text: "Hey everyone!" }
+                ],
+                correct: "B",
+                passage: null
+            },
+            {
+                num: 3,
+                question: "Which greeting is informal?",
+                options: [
+                    { key: "A", text: "Good evening." },
+                    { key: "B", text: "Distinguished guests." },
+                    { key: "C", text: "Hey!" }
+                ],
+                correct: "C",
+                passage: null
+            },
+            {
+                num: 4,
+                question: "You meet your senior officer in the afternoon. What is the correct greeting?",
+                options: [
+                    { key: "A", text: "Good afternoon, Sir." },
+                    { key: "B", text: "Hi, man!" },
+                    { key: "C", text: "What’s up, bro?" }
+                ],
+                correct: "A",
+                passage: null
+            },
+            {
+                num: 5,
+                question: "You meet your classmate in the hallway. What should you say?",
+                options: [
+                    { key: "A", text: "Hi!" },
+                    { key: "B", text: "Distinguished guests." },
+                    { key: "C", text: "Good evening, Ladies and Gentlemen." }
+                ],
+                correct: "A",
+                passage: null
+            },
+            {
+                num: 6,
+                question: "You speak to a group in a formal seminar. What should you say?",
+                options: [
+                    { key: "A", text: "Hey everyone!" },
+                    { key: "B", text: "Good morning, Ladies and Gentlemen." },
+                    { key: "C", text: "Hi, guys!" }
+                ],
+                correct: "B",
+                passage: null
+            },
+            {
+                num: 7,
+                question: "Which greeting is formal?",
+                options: [
+                    { key: "A", text: "What’s up?" },
+                    { key: "B", text: "Hey!" },
+                    { key: "C", text: "Good evening." }
+                ],
+                correct: "C",
+                passage: null
+            },
+            {
+                num: 8,
+                question: "You meet your senior officer at noon. What should you say?",
+                options: [
+                    { key: "A", text: "Hi, buddy." },
+                    { key: "B", text: "Good afternoon, Sir." },
+                    { key: "C", text: "Hey, bro!" }
+                ],
+                correct: "B",
+                passage: null
+            },
+            {
+                num: 9,
+                question: "You greet your neighbor casually. What should you say?",
+                options: [
+                    { key: "A", text: "Hi!" },
+                    { key: "B", text: "Good evening, Sir." },
+                    { key: "C", text: "Ladies and Gentlemen." }
+                ],
+                correct: "A",
+                passage: null
+            },
+            {
+                num: 10,
+                question: "Which greeting is appropriate in a formal email?",
+                options: [
+                    { key: "A", text: "Hey!" },
+                    { key: "B", text: "Hi, bro." },
+                    { key: "C", text: "Good morning." }
+                ],
+                correct: "C",
+                passage: null
+            },
+            {
+                num: 11,
+                question: "You meet your friend at the canteen. What should you say?",
+                options: [
+                    { key: "A", text: "Good afternoon, Sir." },
+                    { key: "B", text: "Hi!" },
+                    { key: "C", text: "Distinguished guests." }
+                ],
+                correct: "B",
+                passage: null
+            },
+            {
+                num: 12,
+                question: "You open a formal meeting. What should you say?",
+                options: [
+                    { key: "A", text: "Hey, everyone!" },
+                    { key: "B", text: "Good morning, Ladies and Gentlemen." },
+                    { key: "C", text: "What’s up?" }
+                ],
+                correct: "B",
+                passage: null
+            },
+            {
+                num: 13,
+                question: "You want to tell where you come from. What sentence is correct?",
+                options: [
+                    { key: "A", text: "I am origin Jakarta." },
+                    { key: "B", text: "I come from Jakarta." },
+                    { key: "C", text: "I coming from Jakarta." }
+                ],
+                correct: "B",
+                passage: null
+            },
+            {
+                num: 14,
+                question: "Which sentence is correct to introduce yourself in a formal situation?",
+                options: [
+                    { key: "A", text: "Hey, my name Andi." },
+                    { key: "B", text: "Let me introduce myself. My name is Andi." },
+                    { key: "C", text: "What’s up? I Andi." }
+                ],
+                correct: "B",
+                passage: null
+            },
+            {
+                num: 15,
+                question: "You want to tell your job. Which sentence is correct?",
+                options: [
+                    { key: "A", text: "I work as a port officer." },
+                    { key: "B", text: "I am work port officer." },
+                    { key: "C", text: "I working port officer." }
+                ],
+                correct: "A",
+                passage: null
+            },
+            {
+                num: 16,
+                question: "You meet a new friend in an informal situation. What is the best greeting?",
+                options: [
+                    { key: "A", text: "Good evening, Ladies and Gentlemen." },
+                    { key: "B", text: "How do you do?" },
+                    { key: "C", text: "Hi, nice to meet you." }
+                ],
+                correct: "C",
+                passage: null
+            },
+            {
+                num: 17,
+                question: "Which sentence is correct to tell your origin?",
+                options: [
+                    { key: "A", text: "I from Bali." },
+                    { key: "B", text: "I am from Bali." },
+                    { key: "C", text: "I be from Bali." }
+                ],
+                correct: "B",
+                passage: null
+            },
+            {
+                num: 18,
+                question: "You want to introduce your work formally. What should you say?",
+                options: [
+                    { key: "A", text: "I work at the Transportation Training Center." },
+                    { key: "B", text: "I working at Transportation Training Center." },
+                    { key: "C", text: "I work in yesterday." }
+                ],
+                correct: "A",
+                passage: null
+            },
+            {
+                num: 19,
+                question: "Which sentence combines greeting and name correctly?",
+                options: [
+                    { key: "A", text: "Good morning. My name is Rina." },
+                    { key: "B", text: "Good morning. Name I Rina." },
+                    { key: "C", text: "Morning. I Rina." }
+                ],
+                correct: "A",
+                passage: null
+            },
+            {
+                num: 20,
+                question: "You introduce yourself to a group for the first time. Which one is correct?",
+                options: [
+                    { key: "A", text: "Hey guys! I Rina from Jakarta work here." },
+                    { key: "B", text: "Let me introduce myself. My name is Rina. I am from Jakarta. I work as a staff officer." },
+                    { key: "C", text: "What’s up! Rina here." }
+                ],
+                correct: "B",
+                passage: null
+            },
+            {
+                num: 21,
+                question: "What transportation does Andi use every day?",
+                options: [
+                    { key: "A", text: "Train" },
+                    { key: "B", text: "Bus" },
+                    { key: "C", text: "Taxi" }
+                ],
+                correct: "B",
+                passage: "andi"
+            },
+            {
+                num: 22,
+                question: "Why does Andi use the bus?",
+                options: [
+                    { key: "A", text: "Because it is fast and expensive" },
+                    { key: "B", text: "Because it is cheap and comfortable" },
+                    { key: "C", text: "Because it is new" }
+                ],
+                correct: "B",
+                passage: "andi"
+            },
+            {
+                num: 23,
+                question: "What did Andi do last year?",
+                options: [
+                    { key: "A", text: "He works at a port" },
+                    { key: "B", text: "He worked as a trainee" },
+                    { key: "C", text: "He will work as an officer" }
+                ],
+                correct: "B",
+                passage: "andi"
+            },
+            {
+                num: 24,
+                question: "Where did Sinta work last year?",
+                options: [
+                    { key: "A", text: "At a port" },
+                    { key: "B", text: "At an airport" },
+                    { key: "C", text: "At a train station" }
+                ],
+                correct: "B",
+                passage: "sinta"
+            },
+            {
+                num: 25,
+                question: "What does Sinta do every day?",
+                options: [
+                    { key: "A", text: "She checked passenger documents" },
+                    { key: "B", text: "She will check passenger documents" },
+                    { key: "C", text: "She checks passenger documents" }
+                ],
+                correct: "C",
+                passage: "sinta"
+            },
+            {
+                num: 26,
+                question: "Why does Sinta like her job?",
+                options: [
+                    { key: "A", text: "Because it is easy" },
+                    { key: "B", text: "Because it is interesting and challenging" },
+                    { key: "C", text: "Because it is close to her home" }
+                ],
+                correct: "B",
+                passage: "sinta"
+            },
+            {
+                num: 27,
+                question: "Which sentence shows a past tense?",
+                options: [
+                    { key: "A", text: "She checks passenger documents" },
+                    { key: "B", text: "She will work as an airport officer" },
+                    { key: "C", text: "Sinta did not understand airport operations" }
+                ],
+                correct: "C",
+                passage: "sinta"
+            },
+            {
+                num: 28,
+                question: "Choose the correct past form: 'She ___ the bus to work yesterday.'",
+                options: [
+                    { key: "A", text: "take" },
+                    { key: "B", text: "took" },
+                    { key: "C", text: "taked" }
+                ],
+                correct: "B",
+                passage: null
+            },
+            {
+                num: 29,
+                question: "What is the past form of the verb visit?",
+                options: [
+                    { key: "A", text: "Visit" },
+                    { key: "B", text: "Visited" },
+                    { key: "C", text: "Visiting" }
+                ],
+                correct: "B",
+                passage: null
+            },
+            {
+                num: 30,
+                question: "Which sentence uses a regular verb in the past tense?",
+                options: [
+                    { key: "A", text: "He went to the airport." },
+                    { key: "B", text: "She worked at the terminal." },
+                    { key: "C", text: "They took the train." }
+                ],
+                correct: "B",
+                passage: null
+            },
+            {
+                num: 31,
+                question: "Choose the correct past form of the verb see:",
+                options: [
+                    { key: "A", text: "See" },
+                    { key: "B", text: "Saw" },
+                    { key: "C", text: "Seed" }
+                ],
+                correct: "B",
+                passage: null
+            },
+            {
+                num: 32,
+                question: "Which verb is a regular verb?",
+                options: [
+                    { key: "A", text: "Do" },
+                    { key: "B", text: "Buy" },
+                    { key: "C", text: "Clean" }
+                ],
+                correct: "C",
+                passage: null
+            },
+            {
+                num: 33,
+                question: "Choose the correct sentence:",
+                options: [
+                    { key: "A", text: "He goed to the port yesterday." },
+                    { key: "B", text: "He went to the port yesterday." },
+                    { key: "C", text: "He go to the port yesterday." }
+                ],
+                correct: "B",
+                passage: null
+            },
+            {
+                num: 34,
+                question: "What is the past form of the verb check?",
+                options: [
+                    { key: "A", text: "Check" },
+                    { key: "B", text: "Checked" },
+                    { key: "C", text: "Checken" }
+                ],
+                correct: "B",
+                passage: null
+            },
+            {
+                num: 35,
+                question: "What is the correct past form of the verb work in the text?",
+                options: [
+                    { key: "A", text: "Work" },
+                    { key: "B", text: "Worked" },
+                    { key: "C", text: "Will work" }
+                ],
+                correct: "B",
+                passage: "rudi"
+            },
+            {
+                num: 36,
+                question: "Which verb shows a future action in the text?",
+                options: [
+                    { key: "A", text: "Enjoys" },
+                    { key: "B", text: "Helped" },
+                    { key: "C", text: "Will join" }
+                ],
+                correct: "C",
+                passage: "rudi"
+            },
+            {
+                num: 37,
+                question: "Choose the correct verb to complete the sentence: 'Last year, Rudi ___ at a bus terminal.'",
+                options: [
+                    { key: "A", text: "works" },
+                    { key: "B", text: "worked" },
+                    { key: "C", text: "will work" }
+                ],
+                correct: "B",
+                passage: "rudi"
+            },
+            {
+                num: 38,
+                question: "Which sentence is in the present tense?",
+                options: [
+                    { key: "A", text: "He helped passengers" },
+                    { key: "B", text: "He enjoys his job" },
+                    { key: "C", text: "He will improve his skills" }
+                ],
+                correct: "B",
+                passage: "rudi"
+            },
+            {
+                num: 39,
+                question: "What is the correct past form of the verb 'visit'?",
+                options: [
+                    { key: "A", text: "Visited" },
+                    { key: "B", text: "Visit" },
+                    { key: "C", text: "Will visit" }
+                ],
+                correct: "A",
+                passage: null
+            },
+            {
+                num: 40,
+                question: "Which verb shows a future action?",
+                options: [
+                    { key: "A", text: "Played" },
+                    { key: "B", text: "Plays" },
+                    { key: "C", text: "Will play" }
+                ],
+                correct: "C",
+                passage: null
+            },
+            {
+                num: 41,
+                question: "Choose the correct verb to complete the sentence: 'Last week, they ___ to Bali.'",
+                options: [
+                    { key: "A", text: "go" },
+                    { key: "B", text: "went" },
+                    { key: "C", text: "will go" }
+                ],
+                correct: "B",
+                passage: null
+            },
+            {
+                num: 42,
+                question: "Which sentence is in the present tense?",
+                options: [
+                    { key: "A", text: "She cooked dinner yesterday." },
+                    { key: "B", text: "She cooks dinner every day." },
+                    { key: "C", text: "She will cook dinner tomorrow." }
+                ],
+                correct: "B",
+                passage: null
+            },
+            {
+                num: 43,
+                question: "Choose the correct verb form: 'Tomorrow, we ___ a meeting.'",
+                options: [
+                    { key: "A", text: "have" },
+                    { key: "B", text: "had" },
+                    { key: "C", text: "will have" }
+                ],
+                correct: "C",
+                passage: null
+            }
+        ];
+
+        // --- APP STATE ---
+        let currentMode = 'study'; // 'study' or 'exam'
+        let currentQuestionIndex = 0;
+        let userAnswers = {}; // { questionNum: 'A'|'B'|'C' }
+        let isOptionSelected = false;
+        let soundEnabled = true;
+        let startTime = null;
+        let timerInterval = null;
+        let currentFilter = 'all';
+
+        // Initialize Audio context safely
+        let audioCtx = null;
+        function getAudioContext() {
+            if (!audioCtx) {
+                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            }
+            return audioCtx;
+        }
+
+        // Play synthetic beep sounds so we don't need any external mp3 files
+        function playSyntheticSound(type) {
+            if (!soundEnabled) return;
+            try {
+                const ctx = getAudioContext();
+                if (ctx.state === 'suspended') {
+                    ctx.resume();
+                }
+                const osc = ctx.createOscillator();
+                const gain = ctx.createGain();
+                osc.connect(gain);
+                gain.connect(ctx.destination);
+
+                if (type === 'correct') {
+                    // Double high pitch beep
+                    osc.type = 'sine';
+                    osc.frequency.setValueAtTime(587.33, ctx.currentTime); // D5
+                    gain.gain.setValueAtTime(0.1, ctx.currentTime);
+                    osc.start();
+                    osc.stop(ctx.currentTime + 0.08);
+
+                    const osc2 = ctx.createOscillator();
+                    const gain2 = ctx.createGain();
+                    osc2.connect(gain2);
+                    gain2.connect(ctx.destination);
+                    osc2.type = 'sine';
+                    osc2.frequency.setValueAtTime(880.00, ctx.currentTime + 0.1); // A5
+                    gain2.gain.setValueAtTime(0.1, ctx.currentTime + 0.1);
+                    osc2.start(ctx.currentTime + 0.1);
+                    osc2.stop(ctx.currentTime + 0.25);
+                } else if (type === 'incorrect') {
+                    // Lower buzzer thud
+                    osc.type = 'triangle';
+                    osc.frequency.setValueAtTime(180, ctx.currentTime);
+                    osc.frequency.exponentialRampToValueAtTime(100, ctx.currentTime + 0.25);
+                    gain.gain.setValueAtTime(0.15, ctx.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.25);
+                    osc.start();
+                    osc.stop(ctx.currentTime + 0.25);
+                } else if (type === 'click') {
+                    osc.type = 'sine';
+                    osc.frequency.setValueAtTime(600, ctx.currentTime);
+                    gain.gain.setValueAtTime(0.02, ctx.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.05);
+                    osc.start();
+                    osc.stop(ctx.currentTime + 0.05);
+                }
+            } catch (e) {
+                console.warn("Audio Context error ignored:", e);
+            }
+        }
+
+        // --- INTERACTION LOGIC ---
+        function selectMode(mode) {
+            currentMode = mode;
+            playSyntheticSound('click');
+            
+            const studyBtn = document.getElementById('modeStudyBtn');
+            const examBtn = document.getElementById('modeExamBtn');
+            const studyCheck = document.getElementById('studyCheck');
+            const examCheck = document.getElementById('examCheck');
+
+            if (mode === 'study') {
+                studyBtn.className = "cursor-pointer border-2 border-indigo-500 bg-indigo-950/20 hover:bg-indigo-950/40 p-4 rounded-xl transition-all flex flex-col items-center text-center relative overflow-hidden group";
+                examBtn.className = "cursor-pointer border-2 border-slate-800 hover:border-slate-700 bg-slate-900/40 hover:bg-slate-900/60 p-4 rounded-xl transition-all flex flex-col items-center text-center relative overflow-hidden group";
+                studyCheck.className = "absolute top-2 right-2 h-4 w-4 rounded-full border border-indigo-500 flex items-center justify-center bg-indigo-600";
+                studyCheck.innerHTML = '<div class="h-1.5 w-1.5 rounded-full bg-white"></div>';
+                examCheck.className = "absolute top-2 right-2 h-4 w-4 rounded-full border border-slate-600 flex items-center justify-center bg-transparent";
+                examCheck.innerHTML = '';
+            } else {
+                examBtn.className = "cursor-pointer border-2 border-indigo-500 bg-indigo-950/20 hover:bg-indigo-950/40 p-4 rounded-xl transition-all flex flex-col items-center text-center relative overflow-hidden group";
+                studyBtn.className = "cursor-pointer border-2 border-slate-800 hover:border-slate-700 bg-slate-900/40 hover:bg-slate-900/60 p-4 rounded-xl transition-all flex flex-col items-center text-center relative overflow-hidden group";
+                examCheck.className = "absolute top-2 right-2 h-4 w-4 rounded-full border border-indigo-500 flex items-center justify-center bg-indigo-600";
+                examCheck.innerHTML = '<div class="h-1.5 w-1.5 rounded-full bg-white"></div>';
+                studyCheck.className = "absolute top-2 right-2 h-4 w-4 rounded-full border border-slate-600 flex items-center justify-center bg-transparent";
+                studyCheck.innerHTML = '';
+            }
+        }
+
+        function toggleSound() {
+            soundEnabled = !soundEnabled;
+            const soundOn = document.getElementById('soundOnIcon');
+            const soundOff = document.getElementById('soundOffIcon');
+            if (soundEnabled) {
+                soundOn.classList.remove('hidden');
+                soundOff.classList.add('hidden');
+                playSyntheticSound('click');
+            } else {
+                soundOn.classList.add('hidden');
+                soundOff.classList.remove('hidden');
+            }
+        }
+
+        // Start Quiz Trigger
+        function startQuiz() {
+            document.getElementById('startScreen').classList.add('hidden');
+            document.getElementById('quizScreen').classList.remove('hidden');
+            
+            // Set Badge
+            document.getElementById('gameModeBadge').innerText = currentMode === 'study' ? 'Mode Belajar' : 'Mode Ujian';
+            
+            currentQuestionIndex = 0;
+            userAnswers = {};
+            isOptionSelected = false;
+            
+            // Start Timer
+            startTime = Date.now();
+            runTimer();
+            
+            loadQuestion();
+        }
+
+        // Timer controller
+        function runTimer() {
+            if (timerInterval) clearInterval(timerInterval);
+            timerInterval = setInterval(() => {
+                const elapsedMs = Date.now() - startTime;
+                const totalSecs = Math.floor(elapsedMs / 1000);
+                const mins = Math.floor(totalSecs / 60).toString().padStart(2, '0');
+                const secs = (totalSecs % 60).toString().padStart(2, '0');
+                document.getElementById('timerText').innerText = `${mins}:${secs}`;
+            }, 1000);
+        }
+
+        // Inject Question details
+        function loadQuestion() {
+            isOptionSelected = false;
+            const q = questionsDB[currentQuestionIndex];
+            
+            // Render basic metrics
+            document.getElementById('currentQuestionNum').innerText = currentQuestionIndex + 1;
+            document.getElementById('totalQuestionsNum').innerText = questionsDB.length;
+            
+            // Calculate progress bar width
+            const progressPercent = ((currentQuestionIndex + 1) / questionsDB.length) * 100;
+            document.getElementById('progressBar').style.width = `${progressPercent}%`;
+
+            // Display Passage if available
+            const passageCont = document.getElementById('passageContainer');
+            const questionWrap = document.getElementById('questionWrapper');
+            const passageTxt = document.getElementById('passageText');
+            
+            const mobileBox = document.getElementById('mobilePassageBox');
+            const mobileTxt = document.getElementById('mobilePassageText');
+
+            if (q.passage && passages[q.passage]) {
+                const passageHTML = passages[q.passage];
+                passageCont.classList.remove('hidden');
+                questionWrap.classList.remove('lg:w-full');
+                passageTxt.innerText = passageHTML;
+
+                // Show mobile passage
+                mobileBox.classList.remove('hidden');
+                mobileTxt.innerText = passageHTML;
+            } else {
+                passageCont.classList.add('hidden');
+                questionWrap.classList.add('lg:w-full');
+                mobileBox.classList.add('hidden');
+            }
+
+            // Question Text
+            document.getElementById('questionText').innerHTML = `
+                <span class="text-indigo-400 font-bold mr-2">Q${q.num}.</span>${q.question}
+            `;
+
+            // Render Choices
+            const optionsCont = document.getElementById('optionsContainer');
+            optionsCont.innerHTML = '';
+            
+            q.options.forEach(opt => {
+                const optButton = document.createElement('button');
+                optButton.id = `opt-${opt.key}`;
+                optButton.onclick = () => selectOption(opt.key);
+                optButton.className = "w-full text-left p-4 rounded-xl border border-slate-800 bg-slate-900/50 hover:bg-slate-800/60 hover:border-slate-700 option-transition flex items-center justify-between group";
+                
+                optButton.innerHTML = `
+                    <div class="flex items-center space-x-4">
+                        <span class="h-8 w-8 rounded-lg bg-slate-800 flex items-center justify-center font-bold text-slate-300 border border-slate-700 group-hover:bg-indigo-600 group-hover:text-white group-hover:border-indigo-500 transition-colors shrink-0">${opt.key}</span>
+                        <span class="text-sm text-slate-200 group-hover:text-white transition-colors">${opt.text}</span>
+                    </div>
+                    <div class="h-5 w-5 rounded-full border-2 border-slate-700 flex items-center justify-center shrink-0" id="circle-${opt.key}">
+                        <div class="h-2.5 w-2.5 rounded-full bg-transparent"></div>
+                    </div>
+                `;
+                optionsCont.appendChild(optButton);
+            });
+
+            // Reset Feedback Cards & Exam Navs
+            document.getElementById('feedbackContainer').classList.add('hidden');
+            document.getElementById('examNavContainer').classList.add('hidden');
+        }
+
+        // Triggered when clicking a choice
+        function selectOption(selectedKey) {
+            if (isOptionSelected) return; // Prevent clicking multiple options
+            isOptionSelected = true;
+            
+            const q = questionsDB[currentQuestionIndex];
+            userAnswers[q.num] = selectedKey;
+
+            const isCorrect = (selectedKey === q.correct);
+            
+            if (isCorrect) {
+                playSyntheticSound('correct');
+            } else {
+                playSyntheticSound('incorrect');
+            }
+
+            if (currentMode === 'study') {
+                // Instantly highlight options & show feedback card
+                showInstantFeedback(selectedKey, q.correct);
+            } else {
+                // Exam Mode: Instantly save and highlight selection slightly, wait 350ms to auto-advance
+                highlightSelectionOnly(selectedKey);
+                setTimeout(() => {
+                    nextQuestion();
+                }, 400);
+            }
+        }
+
+        // Highlight selection only for exam mode
+        function highlightSelectionOnly(selectedKey) {
+            const btn = document.getElementById(`opt-${selectedKey}`);
+            const circle = document.getElementById(`circle-${selectedKey}`);
+            
+            btn.className = "w-full text-left p-4 rounded-xl border border-indigo-500/80 bg-indigo-950/40 option-transition flex items-center justify-between group";
+            circle.className = "h-5 w-5 rounded-full border-2 border-indigo-400 flex items-center justify-center shrink-0 bg-indigo-500";
+            circle.innerHTML = `<div class="h-1.5 w-1.5 rounded-full bg-white"></div>`;
+        }
+
+        // Instant detailed feedback card (Study mode)
+        function showInstantFeedback(selectedKey, correctKey) {
+            const q = questionsDB[currentQuestionIndex];
+            const isCorrect = (selectedKey === correctKey);
+
+            // Redraw options with colors
+            q.options.forEach(opt => {
+                const btn = document.getElementById(`opt-${opt.key}`);
+                const circle = document.getElementById(`circle-${opt.key}`);
+                
+                // Disable button clicks visually
+                btn.removeAttribute('onclick');
+                btn.classList.remove('hover:bg-slate-800/60', 'hover:border-slate-700', 'group');
+
+                if (opt.key === correctKey) {
+                    // This option is the correct answer
+                    btn.className = "w-full text-left p-4 rounded-xl border-emerald-500/80 bg-emerald-950/20 option-transition flex items-center justify-between";
+                    circle.className = "h-5 w-5 rounded-full border-2 border-emerald-500 flex items-center justify-center shrink-0 bg-emerald-500 text-white";
+                    circle.innerHTML = `
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                    `;
+                } else if (opt.key === selectedKey && !isCorrect) {
+                    // This was the user's wrong answer selection
+                    btn.className = "w-full text-left p-4 rounded-xl border-rose-500/80 bg-rose-950/20 option-transition flex items-center justify-between";
+                    circle.className = "h-5 w-5 rounded-full border-2 border-rose-500 flex items-center justify-center shrink-0 bg-rose-500 text-white";
+                    circle.innerHTML = `
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l1.293 1.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 1.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    `;
+                } else {
+                    // Unselected wrong choices
+                    btn.className = "w-full text-left p-4 rounded-xl border-slate-800 bg-slate-900/20 text-slate-500 option-transition flex items-center justify-between";
+                    circle.className = "h-5 w-5 rounded-full border-2 border-slate-800 flex items-center justify-center shrink-0";
+                }
+            });
+
+            // Adjust button Next/Finish text
+            const nextText = document.getElementById('nextBtnText');
+            if (currentQuestionIndex === questionsDB.length - 1) {
+                nextText.innerText = "Lihat Nilai Akhir";
+            } else {
+                nextText.innerText = "Soal Berikutnya";
+            }
+
+            // Show Feedback Div
+            const fbContainer = document.getElementById('feedbackContainer');
+            const fbIcon = document.getElementById('feedbackIcon');
+            const fbTitle = document.getElementById('feedbackTitle');
+            const fbDesc = document.getElementById('feedbackDesc');
+
+            fbContainer.classList.remove('hidden');
+
+            if (isCorrect) {
+                fbIcon.className = "p-2 rounded-full bg-emerald-500/10 text-emerald-400";
+                fbIcon.innerHTML = `
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                `;
+                fbTitle.className = "font-extrabold text-sm block text-emerald-400";
+                fbTitle.innerText = "Jawaban Anda Benar!";
+                fbDesc.innerText = `Pilihan (${selectedKey}) adalah jawaban yang tepat.`;
+            } else {
+                fbIcon.className = "p-2 rounded-full bg-rose-500/10 text-rose-400";
+                fbIcon.innerHTML = `
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                `;
+                fbTitle.className = "font-extrabold text-sm block text-rose-400";
+                fbTitle.innerText = "Jawaban Anda Kurang Tepat";
+                fbDesc.innerText = `Anda menjawab ${selectedKey}. Jawaban yang benar adalah ${correctKey}.`;
+            }
+        }
+
+        // Logic for next questions
+        function nextQuestion() {
+            if (currentQuestionIndex < questionsDB.length - 1) {
+                currentQuestionIndex++;
+                loadQuestion();
+            } else {
+                // End of quiz
+                finishQuiz();
+            }
+        }
+
+        // Finish and calculation process
+        function finishQuiz() {
+            clearInterval(timerInterval);
+            
+            document.getElementById('quizScreen').classList.add('hidden');
+            document.getElementById('resultScreen').classList.remove('hidden');
+
+            // Calculation of score
+            let correctCount = 0;
+            questionsDB.forEach(q => {
+                if (userAnswers[q.num] === q.correct) {
+                    correctCount++;
+                }
+            });
+
+            const accuracy = Math.round((correctCount / questionsDB.length) * 100);
+            
+            // Format Duration
+            const elapsedMs = Date.now() - startTime;
+            const totalSecs = Math.floor(elapsedMs / 1000);
+            const mins = Math.floor(totalSecs / 60).toString().padStart(2, '0');
+            const secs = (totalSecs % 60).toString().padStart(2, '0');
+
+            // Inject Scores
+            document.getElementById('finalScore').innerText = `${correctCount} / ${questionsDB.length}`;
+            document.getElementById('accuracyPercent').innerText = `${accuracy}%`;
+            document.getElementById('totalDuration').innerText = `${mins}:${secs}`;
+
+            // Predicate / Grade
+            const gradeText = document.getElementById('gradeText');
+            if (accuracy === 100) {
+                gradeText.innerText = "Istimewa 🌟";
+                gradeText.className = "text-xl font-black text-amber-400";
+            } else if (accuracy >= 85) {
+                gradeText.innerText = "Sangat Baik 👍";
+                gradeText.className = "text-xl font-black text-emerald-400";
+            } else if (accuracy >= 70) {
+                gradeText.innerText = "Cukup Baik 👌";
+                gradeText.className = "text-xl font-black text-blue-400";
+            } else if (accuracy >= 55) {
+                gradeText.innerText = "Lulus Bersyarat ⚠️";
+                gradeText.className = "text-xl font-black text-yellow-400";
+            } else {
+                gradeText.innerText = "Mengulang ❌";
+                gradeText.className = "text-xl font-black text-rose-400";
+            }
+
+            // Build Review Items
+            buildReviewList();
+        }
+
+        // Generate the 43 item review cards
+        function buildReviewList() {
+            const container = document.getElementById('reviewContainer');
+            container.innerHTML = '';
+
+            questionsDB.forEach(q => {
+                const userAns = userAnswers[q.num] || '-';
+                const isCorrect = userAns === q.correct;
+
+                const card = document.createElement('div');
+                card.className = `review-item p-5 rounded-xl border ${isCorrect ? 'bg-emerald-950/10 border-emerald-500/20' : 'bg-rose-950/10 border-rose-500/20'} transition-all`;
+                card.setAttribute('data-correct', isCorrect ? 'true' : 'false');
+
+                // Passage context representation inside review list
+                let reviewPassageText = '';
+                if (q.passage && passages[q.passage]) {
+                    reviewPassageText = `
+                        <div class="mb-3 bg-slate-900/50 p-3 rounded-lg border border-slate-800 text-xs text-slate-400 leading-relaxed italic">
+                            <span class="block font-bold text-amber-500 not-italic mb-1">Context Reading / Teks Bacaan:</span>
+                            ${passages[q.passage].replace(/\n/g, '<br>')}
+                        </div>
+                    `;
+                }
+
+                // Options list markup
+                let optionsMarkup = '';
+                q.options.forEach(opt => {
+                    let optStyle = "text-slate-400 text-xs";
+                    let prefixIcon = "";
+
+                    if (opt.key === q.correct) {
+                        optStyle = "text-emerald-400 font-bold text-xs flex items-center gap-1.5";
+                        prefixIcon = `
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                            </svg>
+                        `;
+                    } else if (opt.key === userAns && !isCorrect) {
+                        optStyle = "text-rose-400 font-semibold text-xs flex items-center gap-1.5";
+                        prefixIcon = `
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-rose-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        `;
+                    }
+
+                    optionsMarkup += `
+                        <div class="flex items-center space-x-2 mt-1.5 pl-2">
+                            <span class="text-xs font-semibold px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">${opt.key}</span>
+                            <span class="${optStyle}">${opt.text}</span>
+                            ${prefixIcon}
+                        </div>
+                    `;
+                });
+
+                card.innerHTML = `
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                        <span class="text-xs font-bold uppercase tracking-wider ${isCorrect ? 'text-emerald-400' : 'text-rose-400'}">
+                            No. ${q.num} - ${isCorrect ? 'BENAR' : 'SALAH'}
+                        </span>
+                        <div class="flex gap-2">
+                            <span class="text-[11px] px-2 py-0.5 rounded bg-slate-800 text-slate-300">Jawaban Anda: <strong class="${isCorrect ? 'text-emerald-400' : 'text-rose-400'}">${userAns}</strong></span>
+                            <span class="text-[11px] px-2 py-0.5 rounded bg-slate-800 text-emerald-400 font-semibold">Kunci: <strong>${q.correct}</strong></span>
+                        </div>
+                    </div>
+                    ${reviewPassageText}
+                    <p class="text-slate-100 font-semibold text-sm leading-relaxed mb-3">${q.question}</p>
+                    <div class="border-t border-slate-800/60 pt-2 space-y-1">
+                        ${optionsMarkup}
+                    </div>
+                `;
+
+                container.appendChild(card);
+            });
+        }
+
+        // Review list filter controller
+        function filterReview(type) {
+            playSyntheticSound('click');
+            currentFilter = type;
+
+            const allBtn = document.getElementById('filterAll');
+            const correctBtn = document.getElementById('filterCorrect');
+            const incorrectBtn = document.getElementById('filterIncorrect');
+
+            // Reset active styles
+            allBtn.className = "px-3 py-1.5 hover:text-white rounded-md text-slate-400 transition-colors";
+            correctBtn.className = "px-3 py-1.5 hover:text-white rounded-md text-slate-400 transition-colors";
+            incorrectBtn.className = "px-3 py-1.5 hover:text-white rounded-md text-slate-400 transition-colors";
+
+            if (type === 'all') {
+                allBtn.className = "px-3 py-1.5 bg-indigo-600 rounded-md font-bold text-white transition-colors";
+            } else if (type === 'correct') {
+                correctBtn.className = "px-3 py-1.5 bg-indigo-600 rounded-md font-bold text-white transition-colors";
+            } else {
+                incorrectBtn.className = "px-3 py-1.5 bg-indigo-600 rounded-md font-bold text-white transition-colors";
+            }
+
+            // Perform DOM hide/show
+            const items = document.querySelectorAll('.review-item');
+            items.forEach(item => {
+                const isCorrect = item.getAttribute('data-correct') === 'true';
+                if (type === 'all') {
+                    item.classList.remove('hidden');
+                } else if (type === 'correct') {
+                    if (isCorrect) item.classList.remove('hidden');
+                    else item.classList.add('hidden');
+                } else {
+                    if (!isCorrect) item.classList.remove('hidden');
+                    else item.classList.add('hidden');
+                }
+            });
+        }
+
+        function scrollToReview() {
+            playSyntheticSound('click');
+            document.getElementById('reviewPanel').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function restartQuiz() {
+            playSyntheticSound('click');
+            document.getElementById('resultScreen').classList.add('hidden');
+            document.getElementById('startScreen').classList.remove('hidden');
+            
+            // Clean up timers
+            if (timerInterval) clearInterval(timerInterval);
+            document.getElementById('timerText').innerText = "00:00";
+        }
+
+        // Initialize elements on load
+        window.onload = function() {
+            selectMode('study');
+        };
+    </script>
+</body>
+</html>
